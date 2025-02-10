@@ -11,7 +11,7 @@ function Hero() {
 
   return (
     <section
-      className="w-full h-auto md:h-[650px] bg-cover bg-center relative z-10 flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-12 py-10"
+      className="w-full h-full md:h-[650px] bg-cover bg-center relative z-10 flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-12 py-10"
       style={{ backgroundImage: `url(${bannerImg})` }}
     >
       {/* Text and Buttons */}

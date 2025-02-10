@@ -3,7 +3,7 @@ import React from "react";
 function NavMobile({ isOpen, setIsOpen }) {
   return (
     <nav
-      className={`fixed top-0 left-0 w-full h-full bg-purple-800 bg-opacity-90 text-white flex flex-col items-center justify-center transition-transform transform ${
+      className={`fixed top-0 left-0 w-full h-full bg-red-500 bg-opacity-90 text-white flex flex-col items-center justify-center transition-transform transform ${
         isOpen ? "translate-x-0" : "-translate-x-full"
       } md:hidden z-50`}
     >
