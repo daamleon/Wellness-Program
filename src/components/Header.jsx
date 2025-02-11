@@ -1,19 +1,28 @@
-import React, { useState } from "react";
+import React from "react";
 import { Menu } from "lucide-react";
-import logo from "../assets/Logo.png";
+import logo from "../assets/agendakota.png"; // Import logo
 
 function Header({ isOpen, setIsOpen }) {
   return (
     <header className="h-[65px] bg-white p-4 flex items-center justify-between fixed top-0 w-full z-50 rounded-b-xl shadow-md">
-      <div>
-        <p className="text-red-500 text-xl font-bold">Sleep Tourism Program</p>
+      {/* Logo Kiri */}
+      <div className="flex items-center">
+        <img
+          src={logo}
+          alt="Agenda Kota Logo"
+          className="h-10 md:h-12 object-contain"
+        />
       </div>
+
+      {/* Menu Hamburger (Mobile) */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="md:hidden bg-white text-gray-800 pr-2"
       >
         <Menu size={24} />
       </button>
+
+      {/* Navigasi Menu (Desktop) */}
       <nav className="hidden md:flex md:space-x-4">
         <a
           href="#"

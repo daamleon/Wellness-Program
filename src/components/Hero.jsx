@@ -16,12 +16,17 @@ function Hero() {
     >
       {/* Text and Buttons */}
       <div className="w-full md:w-1/2 text-left flex flex-col justify-center items-center">
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg text-white">
-          SLEEP TOURISM
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg text-white text-center">
+          SLEEP TOURISM & WELLNESS
         </h1>
-        <h2 className="text-xl md:text-3xl mt-2 font-light drop-shadow-lg text-white">
+        <h2 className="text-xl md:text-3xl mt-2 font-light drop-shadow-lg text-white text-center">
           Recharge Your Body, Revive Your Mind
         </h2>
+        <p className="text-center drop-shadow-lg">
+          Temukan keseimbangan tubuh dan pikiran melalui pengalaman relaksasi
+          terbaik. Nikmati aktivitas wellness, perbaiki kualitas tidur, dan
+          rasakan energi baru dengan program Sleep Tourism.
+        </p>
         <div className="flex flex-col md:flex-row items-center gap-4 mt-6">
           <button className="bg-gradient-to-r from-red-500 to-red-700 hover:from-red-700 hover:to-red-900 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg transform hover:scale-105 transition-all duration-300">
             Daftar Sekarang

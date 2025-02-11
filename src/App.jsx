@@ -1,14 +1,17 @@
 import React, { useState, useRef } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import MainContent from "./components/MainContent";
-import EventLocation from "./components/Location";
-// import CampusPartners from "./components/Partners";
+import MainContent1 from "./components/MainContent1";
+import MainContent2 from "./components/MainContent2";
+import MainContent3 from "./components/MainContent3";
+import MainContent4 from "./components/MainContent4";
+import Location from "./components/EventLocation";
 import Footer from "./components/Footer";
 import NavMobile from "./components/NavMobile";
 import EmbedEvent from "./components/EmbedEvent";
-// import Sponsor from "./components/Sponsor";
+import Promo from "./components/Promotion";
 import "./index.css";
+import "@fontsource/inter";
 
 function App() {
   const [showEmbed, setShowEmbed] = useState(false);
@@ -33,13 +36,32 @@ function App() {
       {/* Kirimkan isOpen dan setIsOpen ke NavMobile */}
       <div className="pt-12 flex-1 overflow-x-hidden">
         <Hero />
-        <MainContent handleShowEmbed={handleShowEmbed} />
+
+        {/* <MainContent1 /> */}
+        <MainContent2 />
+        <MainContent3 />
+        <MainContent4 />
+        <Location />
+        <Promo />
+
+        {/* Tombol Daftar Sekarang */}
+        <div className="text-center">
+          <button
+            onClick={handleShowEmbed}
+            className="mb-12 mt-6 px-6 py-3 bg-red-600 text-white text-lg font-semibold rounded-lg hover:bg-red-700 transition"
+          >
+            Daftar Sekarang
+          </button>
+        </div>
+
+        {/* Embed Form jika showEmbed aktif */}
         {showEmbed && (
           <div ref={embedRef} className="w-full max-w-4xl mx-auto py-10">
             <EmbedEvent handleClose={handleCloseEmbed} />
           </div>
         )}
-        <EventLocation />
+
+        {/* <EventLocation /> */}
         {/* <CampusPartners />
         <Sponsor /> */}
         <Footer />
