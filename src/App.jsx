@@ -12,6 +12,7 @@ import EmbedEvent from "./components/EmbedEvent";
 import Promo from "./components/Promotion";
 import "./index.css";
 import "@fontsource/inter";
+import VidPlayer from "./components/VideoPlayer";
 
 function App() {
   const [showEmbed, setShowEmbed] = useState(false);
@@ -36,6 +37,7 @@ function App() {
       {/* Kirimkan isOpen dan setIsOpen ke NavMobile */}
       <div className="pt-12 flex-1 overflow-x-hidden">
         <Hero />
+        <VidPlayer videoId="72ZVFzu0WnE" />
 
         {/* <MainContent1 /> */}
         <MainContent2 />

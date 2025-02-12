@@ -11,7 +11,7 @@ function MainContent2() {
   };
 
   return (
-    <section id="main-content" className="mx-4 md:mx-auto max-w-6xl my-10">
+    <section id="main-content" className="mx-4 md:mx-auto max-w-6xl my-2 mb-10">
       <h3 className="text-2xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
         Kenapa Harus Ikut Program Sleep Tourism & Wellness?
       </h3>
