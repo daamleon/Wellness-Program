@@ -2,7 +2,7 @@ import React from "react";
 
 const VideoPlayer = ({ videoId }) => {
   return (
-    <div className="flex justify-center items-center py-10 px-6">
+    <div className="flex justify-center items-center py-10 px-8">
       <div className="w-full max-w-3xl relative rounded-xl overflow-hidden shadow-lg border border-gray-300">
         <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
           <iframe
