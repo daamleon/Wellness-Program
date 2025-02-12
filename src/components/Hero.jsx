@@ -39,16 +39,17 @@ function Hero() {
 
         {/* Tombol CTA */}
         <div className="flex flex-col md:flex-row items-center gap-4 mt-6">
-          <button 
-          onClick={scrollToPromotion}
-          className="bg-gradient-to-r from-red-400 to-red-500 hover:from-red-600 hover:to-red-700 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg transform hover:scale-105 transition-all duration-300">
+          <button
+            onClick={scrollToPromotion}
+            className="bg-gradient-to-r from-red-400 to-red-500 hover:from-red-600 hover:to-red-700 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg transform hover:scale-105 transition-all duration-300"
+          >
             Daftar Sekarang
           </button>
           <a
-            href="https://wa.me/youradminnumber"
-            className="bg-gradient-to-r from-red-400 to-red-500 hover:from-red-600 hover:to-red-700 text-white hover:text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg transform hover:scale-105 transition-all duration-300"
+            href="https://wa.me/081235189247"
+            className="border md:border-2 border-gradient-to-r border-red-500 text-red-500 hover:text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg transform hover:scale-105 transition-all duration-300"
           >
-            Chat Admin
+            Hubungi Admin
           </a>
         </div>
       </div>

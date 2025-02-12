@@ -44,8 +44,7 @@ function App() {
         <Location />
         <Promo />
 
-        {/* Tombol Daftar Sekarang */}
-        <div className="text-center">
+        {/* <div className="text-center">
           <button
             onClick={handleShowEmbed}
             className="mb-12 mt-6 px-6 py-3 bg-gradient-to-r from-red-400 to-red-500 text-white text-lg font-semibold rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
@@ -53,13 +52,11 @@ function App() {
             Daftar Sekarang
           </button>
         </div>
-
-        {/* Embed Form jika showEmbed aktif */}
         {showEmbed && (
           <div ref={embedRef} className="w-full max-w-4xl mx-auto py-10">
             <EmbedEvent handleClose={handleCloseEmbed} />
           </div>
-        )}
+        )} */}
 
         {/* <CampusPartners />
         <Sponsor /> */}

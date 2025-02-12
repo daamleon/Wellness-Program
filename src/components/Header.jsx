@@ -1,20 +1,18 @@
 import React from "react";
 import { Menu } from "lucide-react";
-import logo from "../assets/agendakota.png"; // Import logo
+import logo from "../assets/agendakota.png";
 
 function Header({ isOpen, setIsOpen }) {
   return (
     <header className="h-[65px] bg-white p-4 flex items-center justify-between fixed top-0 w-full z-50 rounded-b-xl shadow-md">
-      {/* Logo Kiri */}
       <div className="flex items-center">
         <img
           src={logo}
           alt="Agenda Kota Logo"
-          className="h-10 md:h-12 object-contain"
+          className="h-8 md:h-12 object-contain"
         />
       </div>
 
-      {/* Menu Hamburger (Mobile) */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="md:hidden bg-white text-gray-800 pr-2"
@@ -22,7 +20,6 @@ function Header({ isOpen, setIsOpen }) {
         <Menu size={24} />
       </button>
 
-      {/* Navigasi Menu (Desktop) */}
       <nav className="hidden md:flex md:space-x-4">
         <a
           href="#"
