@@ -9,18 +9,25 @@ function MainContent2() {
       mainContent.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   return (
-    <section
-      id="main-content"
-      className="bg-gray-100 shadow-lg p-6 md:p-12 rounded-xl mx-4 md:mx-auto max-w-6xl my-10"
-    >
-      <h3 className="text-2xl md:text-4xl font-bold text-gray-800 mb-8 text-center">
+    <section id="main-content" className="mx-4 md:mx-auto max-w-6xl my-10">
+      <h3 className="text-2xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
         Kenapa Harus Ikut Program Sleep Tourism & Wellness?
       </h3>
 
-      {/* Grid Layout */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        {/* Gambar di Sisi Kiri */}
+      <p className="text-gray-600 text-md md:text-xl text-justify md:text-center max-w-3xl mx-auto leading-relaxed mb-6 px-6">
+        Di tengah gaya hidup modern yang penuh tekanan, kualitas tidur sering
+        kali terabaikan. Lebih dari{" "}
+        <strong className="text-gray-800">62% orang dewasa</strong> mengalami
+        gangguan tidur. Sleep Tourism hadir sebagai solusi untuk membantu tubuh
+        dan pikiran beristirahat lebih baik melalui kombinasi relaksasi,
+        meditasi, dan gaya hidup sehat.
+      </p>
+
+      {/* Grid untuk MD ke atas */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-gray-100 shadow-lg p-6 md:p-12 rounded-xl">
+        {/* Gambar */}
         <div className="w-full flex justify-center">
           <img
             src={img1}
@@ -29,16 +36,8 @@ function MainContent2() {
           />
         </div>
 
-        {/* Konten di Sisi Kanan */}
+        {/* Poin Highlight */}
         <div className="space-y-6">
-          {/* <div className="p-4">
-            <p className="text-gray-600 text-base md:text-lg leading-relaxed text-center">
-              Sleep tourism adalah konsep perjalanan yang berfokus pada
-              relaksasi, peningkatan kualitas tidur, dan revitalisasi tubuh.
-            </p>
-          </div> */}
-
-          {/* Highlight Data */}
           <div className="space-y-4">
             <div className="flex items-center space-x-4">
               <FaBed className="text-red-500 text-3xl" />
@@ -67,17 +66,16 @@ function MainContent2() {
               </p>
             </div>
           </div>
-
-          {/* Tombol CTA */}
-          <div className="text-center md:text-left mt-6">
-            <button
-              onClick={scrollToNextContent}
-              className="bg-red-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-600 transition"
-            >
-              Explore Sleep Tourism
-            </button>
-          </div>
         </div>
+      </div>
+
+      <div className="flex justify-center mt-6">
+        <button
+          onClick={scrollToNextContent}
+          className="bg-gradient-to-r from-red-400 to-red-500 text-white font-medium px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+        >
+          Explore Sleep Tourism
+        </button>
       </div>
     </section>
   );

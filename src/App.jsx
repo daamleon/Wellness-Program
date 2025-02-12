@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import MainContent1 from "./components/MainContent1";
+// import MainContent1 from "./components/MainContent1";
 import MainContent2 from "./components/MainContent2";
 import MainContent3 from "./components/MainContent3";
 import MainContent4 from "./components/MainContent4";
@@ -48,7 +48,7 @@ function App() {
         <div className="text-center">
           <button
             onClick={handleShowEmbed}
-            className="mb-12 mt-6 px-6 py-3 bg-red-600 text-white text-lg font-semibold rounded-lg hover:bg-red-700 transition"
+            className="mb-12 mt-6 px-6 py-3 bg-gradient-to-r from-red-400 to-red-500 text-white text-lg font-semibold rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
           >
             Daftar Sekarang
           </button>
@@ -61,7 +61,6 @@ function App() {
           </div>
         )}
 
-        {/* <EventLocation /> */}
         {/* <CampusPartners />
         <Sponsor /> */}
         <Footer />
