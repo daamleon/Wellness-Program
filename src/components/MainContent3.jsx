@@ -113,7 +113,10 @@ function MainContent3() {
     : agendaData.slice(0, defaultItems);
 
   return (
-    <section id="next-content" className="relative mb-10 px-4 md:px-12">
+    <section
+      id="next-content"
+      className="relative mb-10 px-4 md:px-12"
+    >
       <h3 className="text-2xl md:text-3xl font-bold text-gray-800 text-center mb-8">
         Apa saja agendanya?
       </h3>

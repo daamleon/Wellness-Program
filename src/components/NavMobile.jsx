@@ -1,42 +1,55 @@
 import React from "react";
 
 function NavMobile({ isOpen, setIsOpen }) {
+  const scrollToPromotion = () => {
+    const mainContent = document.getElementById("promotion");
+    if (mainContent) {
+      mainContent.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const scrollToServices = () => {
+    const mainContent = document.getElementById("next-content");
+    if (mainContent) {
+      mainContent.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <nav
-      className={`fixed top-0 left-0 w-full h-full bg-red-500 bg-opacity-90 text-white flex flex-col items-center justify-center transition-transform transform ${
+      className={`fixed top-0 left-0 w-full h-full bg-white bg-opacity-95 text-white flex flex-col items-center justify-center transition-transform transform ${
         isOpen ? "translate-x-0" : "-translate-x-full"
       } md:hidden z-50`}
     >
       <button
         onClick={() => setIsOpen(false)}
-        className="absolute top-4 right-4 text-white bg-orange-600 bg-opacity-0 text-4xl"
+        className="absolute top-4 right-4 text-black bg-orange-600 bg-opacity-0 text-4xl border-none"
       >
         &times;
       </button>
       <a
-        href="#"
-        className="p-4 text-lg hover:bg-white w-full text-center text-white"
+        href="home"
+        className="p-4 text-lg w-full text-center text-red-500 transform hover:scale-105 transition-all duration-300 hover:text-red-500"
       >
         Home
       </a>
+
       <a
-        href="#"
-        className="p-4 text-lg hover:bg-white w-full text-center text-white"
-      >
-        About
-      </a>
-      <a
-        href="#"
-        className="p-4 text-lg hover:bg-white w-full text-center text-white"
+        onClick={() => {
+          scrollToServices();
+          setIsOpen(false);
+        }}
+        className="hover:cursor-pointer p-4 text-lg w-full text-center text-red-500 pb-8 transform hover:scale-105 transition-all duration-300 hover:text-red-500"
       >
         Services
       </a>
-      <a
-        href="#"
-        className="p-4 text-lg hover:bg-white w-full text-center text-white"
+      <button
+        onClick={() => {
+          scrollToPromotion();
+          setIsOpen(false);
+        }}
+        className="bg-gradient-to-r from-red-400 to-red-500 hover:from-red-600 hover:to-red-700 text-white px-6 py-2 rounded-full text-md font-semibold shadow-lg transform hover:scale-105 transition-all duration-300"
       >
-        Contact
-      </a>
+        Daftar Sekarang
+      </button>
     </nav>
   );
 }

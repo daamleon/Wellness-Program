@@ -17,6 +17,7 @@ function Hero() {
 
   return (
     <section
+      id="home"
       className="relative w-full h-full md:h-[650px] bg-cover bg-center flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-12 py-10"
       style={{ backgroundImage: `url(${bannerImg})` }}
     >
