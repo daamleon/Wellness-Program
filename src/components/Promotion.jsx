@@ -58,17 +58,16 @@ function PackageSection() {
           </p>
           <p className="text-4xl md:text-6xl font-black text-yellow-400">
             IDR 2.499.000{" "}
-            <span className="text-lg font-medium text-gray-300">
+            <span className="text-lg font-medium text-yellow-300">
               net per-pax
             </span>
           </p>
         </div>
 
-        <p className="mt-4 border-lg text-white px-6 py-2 rounded-full text-lg font-bold inline-block animate-pulse">
+        <p className="mt-4 border-lg text-red-500 px-6 py-2 rounded-full text-lg font-bold inline-block animate-pulse">
           🚀 Kuota Terbatas, hanya untuk 10 pendaftar pertama!
         </p>
 
-        {/* Tombol CTA */}
         <div className="mt-8">
           <button
             onClick={handleShowEmbed}
@@ -78,16 +77,14 @@ function PackageSection() {
           </button>
         </div>
 
-        {/* Formulir Embed */}
         {showEmbed && (
           <div ref={embedRef} className="w-full max-w-4xl mx-auto mt-8">
             <EmbedEvent handleClose={handleCloseEmbed} />
           </div>
         )}
 
-        {/* Fasilitas */}
-        <h3 className="text-3xl font-bold mt-12 text-yellow-400">
-          ✨ Apa yang akan Anda dapatkan?
+        <h3 className="text-3xl font-bold mt-12 text-white">
+          Apa yang akan Anda dapatkan?
         </h3>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-6">
@@ -104,11 +101,10 @@ function PackageSection() {
           ))}
         </div>
 
-        {/* Tombol Tampilkan Semua (Hanya Mobile) */}
         <div className="mt-6 md:hidden">
           <button
             onClick={() => setShowAll(!showAll)}
-            className="px-5 py-2 bg-yellow-500 text-black font-semibold rounded-full shadow-md hover:bg-yellow-600 transition-all duration-300"
+            className="px-3 py-1 bg-transparent text-white font-semibold rounded-full shadow-md hover:bg-white hover:text-black transition-all duration-300 text-sm"
           >
             {showAll ? "Tampilkan Sedikit" : "Tampilkan Semua"}
           </button>
