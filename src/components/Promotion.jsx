@@ -50,7 +50,7 @@ function PackageSection() {
     >
       <div className="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
 
-      <div className="z-10 w-full max-w-5xl text-center text-white bg-black bg-opacity-30 p-6 py-12 lg:p-20 md:rounded-2xl shadow-2xl backdrop-blur-md">
+      <div className="z-10 w-full h-full max-w-5xl text-center text-white bg-black bg-opacity-30 py-12 p-10 lg:p-20 md:rounded-2xl shadow-2xl backdrop-blur-md">
         <h2
           id="promotion"
           className="text-xl md:text-4xl font-extrabold leading-tight"
