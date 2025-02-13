@@ -5,7 +5,7 @@ import dailyHotelsLogo from "../assets/dailyhotels.png";
 
 function MainContent1() {
   return (
-    <section className="bg-white shadow-lg rounded-xl mx-4 md:mx-auto max-w-6xl my-10 p-6 p-0 flex flex-col-reverse md:flex-row items-stretch">
+    <section className="bg-white shadow-lg rounded-xl mx-4 md:mx-auto max-w-6xl my-10 flex flex-col-reverse md:flex-row items-stretch">
       {/* Bagian Teks */}
       <div className="md:w-3/5 p-6 flex flex-col justify-center">
         <div className="flex items-center gap-4 mb-4">
