@@ -8,11 +8,12 @@ import MainContent4 from "./components/MainContent4";
 import Location from "./components/EventLocation";
 import Footer from "./components/Footer";
 import NavMobile from "./components/NavMobile";
-import EmbedEvent from "./components/EmbedEvent";
+// import EmbedEvent from "./components/EmbedEvent";
 import Promo from "./components/Promotion";
 import "./index.css";
 import "@fontsource/inter";
 import VidPlayer from "./components/VideoPlayer";
+// import Rundown from "./components/rundown";
 
 function App() {
   const [showEmbed, setShowEmbed] = useState(false);
@@ -42,26 +43,10 @@ function App() {
         {/* <MainContent1 /> */}
         <MainContent2 />
         <MainContent3 />
+        {/* <Rundown /> */}
         <MainContent4 />
         <Location />
         <Promo />
-
-        {/* <div className="text-center">
-          <button
-            onClick={handleShowEmbed}
-            className="mb-12 mt-6 px-6 py-3 bg-gradient-to-r from-red-400 to-red-500 text-white text-lg font-semibold rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
-          >
-            Daftar Sekarang
-          </button>
-        </div>
-        {showEmbed && (
-          <div ref={embedRef} className="w-full max-w-4xl mx-auto py-10">
-            <EmbedEvent handleClose={handleCloseEmbed} />
-          </div>
-        )} */}
-
-        {/* <CampusPartners />
-        <Sponsor /> */}
         <Footer />
       </div>
     </div>

@@ -7,6 +7,14 @@ import morningStretching from "../assets/stretching.jpg";
 import wellnessRetreat from "../assets/relax.jpg";
 import medicalCheckup from "../assets/dinner.webp";
 import mentalConsultation from "../assets/consultation.jpg";
+import soundHealing from "../assets/soundhealing.jpg";
+import breakfast from "../assets/breakfast.webp";
+import gift from "../assets/gift.webp";
+import dinner from "../assets/dinner.webp";
+import workshop from "../assets/workshop.avif";
+import morningyoga from "../assets/morningyoga.jpg";
+import relaxroom from "../assets/relaxroom.jpg";
+import checkup from "../assets/checkup.jpg";
 
 const agendaData = [
   {
@@ -22,10 +30,40 @@ const agendaData = [
     image: mindfulnessWalk,
   },
   {
+    title: "Healthy Dinner",
+    description:
+      "Santap malam dengan menu sehat yang seimbang, seperti sup hangat, salad, dan protein rendah lemak.",
+    image: dinner,
+  },
+  {
+    title: "Sound Healing & Relaxation",
+    description:
+      "Terapi suara menggunakan alat seperti gong, singing bowl, dan musik relaksasi untuk membantu tidur lebih nyenyak.",
+    image: soundHealing,
+  },
+  {
+    title: "Room Relaxation",
+    description:
+      "Ruangan yang di set-up dengan Suasasana Relaksasi dengan aromatherapy",
+    image: relaxroom,
+  },
+  {
     title: "Morning Yoga & Stretching",
     description:
       "Memulai hari dengan gerakan yoga yang lembut dan peregangan untuk meningkatkan fleksibilitas tubuh.",
-    image: morningStretching,
+    image: morningyoga,
+  },
+  {
+    title: "Healthy Breakfast",
+    description:
+      "Menu sarapan yang mendukung energi pagi, seperti granola, buah-buahan segar, dan teh herbal.",
+    image: breakfast,
+  },
+  {
+    title: "Wellness Workshop",
+    description:
+      "Sesi edukasi tentang pola hidup sehat, tips tidur berkualitas, dan teknik mengelola stres.",
+    image: workshop,
   },
   {
     title: "Wellness Retreat",
@@ -33,47 +71,12 @@ const agendaData = [
       "Pengalaman retreat holistik dengan berbagai aktivitas untuk menyeimbangkan fisik, mental, dan emosional.",
     image: wellnessRetreat,
   },
-  {
-    title: "Sound Healing & Relaxation",
-    description:
-      "Terapi suara menggunakan alat seperti gong, singing bowl, dan musik relaksasi untuk membantu tidur lebih nyenyak.",
-    image: wellnessRetreat,
-  },
+
   {
     title: "Medical Check-up",
     description:
       "Pemeriksaan kesehatan menyeluruh untuk memastikan kondisi tubuh dalam keadaan prima selama program berlangsung.",
-    image: medicalCheckup,
-  },
-  {
-    title: "Healthy Breakfast",
-    description:
-      "Menu sarapan yang mendukung energi pagi, seperti granola, buah-buahan segar, dan teh herbal.",
-    image: medicalCheckup,
-  },
-  {
-    title: "Room Relaxation",
-    description:
-      "Ruangan yang di set-up dengan Suasasana Relaksasi dengan aromatherapy",
-    image: wellnessRetreat,
-  },
-  {
-    title: "Aromatherapy Gift",
-    description:
-      "Seluruh Peserta Mendapatkan Gift Cantik , Aromatheraphy untuk Relaxasi",
-    image: wellnessRetreat,
-  },
-  {
-    title: "Healthy Dinner",
-    description:
-      "Santap malam dengan menu sehat yang seimbang, seperti sup hangat, salad, dan protein rendah lemak.",
-    image: wellnessRetreat,
-  },
-  {
-    title: "Wellness Workshop",
-    description:
-      "Sesi edukasi tentang pola hidup sehat, tips tidur berkualitas, dan teknik mengelola stres.",
-    image: wellnessRetreat,
+    image: checkup,
   },
 
   {
@@ -81,6 +84,12 @@ const agendaData = [
     description:
       "Sesi konsultasi dengan ahli untuk memahami dan mengelola kesehatan mental dengan lebih baik.",
     image: mentalConsultation,
+  },
+  {
+    title: "Aromatherapy Gift",
+    description:
+      "Seluruh Peserta Mendapatkan Gift Cantik , Aromatheraphy untuk Relaxasi",
+    image: gift,
   },
 ];
 
