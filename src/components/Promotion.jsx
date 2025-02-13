@@ -50,7 +50,7 @@ function PackageSection() {
     >
       <div className="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
 
-      <div className="z-10 w-full h-full max-w-5xl text-center text-white bg-black bg-opacity-30 py-12 p-10 lg:p-20 md:rounded-2xl shadow-2xl backdrop-blur-md">
+      <div className="z-10 w-full h-full max-w-5xl text-center text-white bg-black bg-opacity-30 py-16 md:py-16 p-6 lg:p-20 md:rounded-2xl shadow-2xl backdrop-blur-md">
         <h2
           id="promotion"
           className="text-xl md:text-4xl font-extrabold leading-tight"
@@ -87,12 +87,12 @@ function PackageSection() {
         </div>
 
         {showEmbed && (
-          <div ref={embedRef} className="w-full max-w-4xl mx-auto mt-8">
+          <div ref={embedRef} className="w-full max-w-4xl mx-auto mt-4">
             <EmbedEvent handleClose={handleCloseEmbed} />
           </div>
         )}
 
-        <h3 className="text-xl md:text-2xl font-bold mt-12 text-white">
+        <h3 className="text-xl md:text-2xl font-bold mt-8 text-white">
           Apa yang akan Anda dapatkan?
         </h3>
 
