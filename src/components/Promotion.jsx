@@ -5,6 +5,7 @@ import EmbedEvent from "../components/EmbedEvent";
 function PackageSection() {
   const [showEmbed, setShowEmbed] = useState(false);
   const embedRef = useRef(null);
+  const [showAll, setShowAll] = useState(false);
 
   const handleShowEmbed = () => {
     setShowEmbed(true);
@@ -16,6 +17,21 @@ function PackageSection() {
   const handleCloseEmbed = () => {
     setShowEmbed(false);
   };
+
+  const items = [
+    "Healthy Dinner",
+    "Medical Check-up",
+    "Aqua Yoga",
+    "Wellness Workshop",
+    "Sound Healing & Relaxation",
+    "Mental Health Consultation",
+    "Morning Yoga & Stretching",
+    "Mindfulness Walk",
+    "Accomodation 2D1N",
+    "Healthy Breakfast",
+    "Mindfulness Eating",
+    "Aromatherapy Gift",
+  ];
 
   return (
     <section
@@ -57,21 +73,16 @@ function PackageSection() {
           </div>
         )}
 
+        {/* What Will You Get */}
+        <h3 className="text-2xl font-bold mt-8 text-yellow-400">
+          Agenda & Fasilitas yang akan anda dapatkan.
+        </h3>
+
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
-          {[
-            "Healthy Dinner",
-            "Medical Check-up",
-            "Aqua Yoga",
-            "Wellness Workshop",
-            "Sound Healing & Relaxation",
-            "Mental Health Consultation",
-            "Morning Yoga & Stretching",
-            "Mindfulness Walk",
-            "Accomodation 2D1N",
-            "Healthy Breakfast",
-            "Mindfulness Eating",
-            "Aromatherapy Gift",
-          ].map((item, index) => (
+          {(showAll || window.innerWidth >= 768
+            ? items
+            : items.slice(0, 6)
+          ).map((item, index) => (
             <div
               key={index}
               className="bg-white bg-opacity-90 p-4 rounded-lg shadow-md text-gray-900 font-medium border border-gray-300"
@@ -79,6 +90,16 @@ function PackageSection() {
               {item}
             </div>
           ))}
+        </div>
+
+        {/* Tombol Tampilkan Semua & Tampilkan Sedikit (Hanya di Mobile) */}
+        <div className="mt-4 md:hidden">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="px-4 py-2 bg-yellow-500 text-white font-semibold rounded-lg shadow-md hover:bg-yellow-600 transition-all duration-300"
+          >
+            {showAll ? "Tampilkan Sedikit" : "Tampilkan Semua"}
+          </button>
         </div>
       </div>
     </section>
