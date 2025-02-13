@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import bgImage from "../assets/Location1.jpg";
 import EmbedEvent from "../components/EmbedEvent";
 
@@ -33,6 +33,16 @@ function PackageSection() {
     "Aromatherapy Gift",
   ];
 
+  useEffect(() => {
+    const handleResize = () => {
+      setShowAll(window.innerWidth >= 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <section
       className="relative flex flex-col items-center bg-cover bg-center bg-no-repeat bg-fixed min-h-[700px] md:py-20 lg:py-24 md:px-12 lg:px-20"
@@ -40,23 +50,22 @@ function PackageSection() {
     >
       <div className="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
 
-      <div className="z-10 w-full max-w-5xl text-center text-white bg-black bg-opacity-30 p-6 py-14 md:p-14 lg:p-20 md:rounded-2xl shadow-2xl backdrop-blur-md">
+      <div className="z-10 w-full max-w-5xl text-center text-white bg-black bg-opacity-30 p-6 py-12 lg:p-20 md:rounded-2xl shadow-2xl backdrop-blur-md">
         <h2
           id="promotion"
-          className="text-4xl md:text-5xl font-extrabold leading-tight"
+          className="text-xl md:text-4xl font-extrabold leading-tight"
         >
           Sleep & Wellness Tourism
         </h2>
-        <p className="text-lg text-gray-300 mt-2 font-light">
+        <p className="text-md text-gray-300 mt-2 font-light">
           Medical Journey & Wellness Package
         </p>
 
-        {/* Harga */}
         <div className="mt-6">
           <p className="text-xl md:text-2xl font-semibold text-gray-400">
             <span className="line-through text-red-500">IDR 3.200.000</span>
           </p>
-          <p className="text-4xl md:text-6xl font-black text-yellow-400">
+          <p className="text-2xl md:text-4xl font-black text-yellow-400">
             IDR 2.499.000{" "}
             <span className="text-lg font-medium text-yellow-300">
               net per-pax
@@ -64,7 +73,7 @@ function PackageSection() {
           </p>
         </div>
 
-        <p className="mt-4 border-lg text-red-500 px-6 py-2 rounded-full text-lg font-bold inline-block animate-pulse">
+        <p className="mt-4 border-lg text-red-500 px-6 py-2 rounded-full text-md font-bold inline-block animate-pulse">
           🚀 Kuota Terbatas, hanya untuk 10 pendaftar pertama!
         </p>
 
@@ -83,18 +92,15 @@ function PackageSection() {
           </div>
         )}
 
-        <h3 className="text-3xl font-bold mt-12 text-white">
+        <h3 className="text-xl md:text-2xl font-bold mt-12 text-white">
           Apa yang akan Anda dapatkan?
         </h3>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-6">
-          {(showAll || window.innerWidth >= 768
-            ? items
-            : items.slice(0, 6)
-          ).map((item, index) => (
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 mt-6">
+          {(showAll ? items : items.slice(0, 6)).map((item, index) => (
             <div
               key={index}
-              className="bg-white bg-opacity-90 p-4 rounded-lg shadow-md text-gray-900 font-medium border border-gray-300 text-center"
+              className="bg-white bg-opacity-90 p-2 rounded-lg shadow-md text-gray-900 font-medium border border-gray-300 text-center text-sm"
             >
               {item}
             </div>
