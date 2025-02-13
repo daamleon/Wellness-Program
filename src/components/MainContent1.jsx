@@ -1,43 +1,39 @@
 import React from "react";
-import sleep1 from "../assets/sleep1.jpg";
-import sleep2 from "../assets/sleep2.jpg";
+import sleepTourismImage from "../assets/relax.jpg";
+import indonesiaLogo from "../assets/agendakota.png";
+import dailyHotelsLogo from "../assets/dailyhotels.png";
 
 function MainContent1() {
   return (
-    <section className="bg-gray-100 shadow-lg p-6 md:p-12 rounded-xl mx-4 md:mx-auto max-w-6xl my-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div className="relative flex justify-center md:justify-start">
-          <div className="relative w-64 h-64 md:w-80 md:h-80">
-            <img
-              src={sleep1}
-              alt="Sleep Issue"
-              className="absolute top-0 left-0 w-32 h-32 md:w-40 md:h-40 rounded-lg shadow-lg"
-            />
-            <img
-              src={sleep2}
-              alt="Stress"
-              className="absolute top-10 left-10 w-36 h-36 md:w-44 md:h-44 rounded-lg shadow-lg z-10"
-            />
-            <img
-              src={sleep2}
-              alt="Overworked"
-              className="absolute bottom-0 right-0 w-32 h-32 md:w-40 md:h-40 rounded-lg shadow-lg"
-            />
-          </div>
+    <section className="bg-white shadow-lg rounded-xl mx-4 md:mx-auto max-w-6xl my-10 p-6 p-0 flex flex-col-reverse md:flex-row items-stretch">
+      {/* Bagian Teks */}
+      <div className="md:w-3/5 p-6 flex flex-col justify-center">
+        <div className="flex items-center gap-4 mb-4">
+          <img src={indonesiaLogo} alt="Wonderful Indonesia" className="h-8" />
+          <img src={dailyHotelsLogo} alt="Daily Hotels" className="h-6" />
         </div>
-        <div className="text-center md:text-left">
-          <h3 className="text-2xl md:text-4xl font-bold text-gray-800 mb-4">
-            Kenapa Kualitas Tidur Penting?
-          </h3>
-          <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
-            Di tengah gaya hidup modern yang penuh tekanan, kualitas tidur
-            sering kali terabaikan. Lebih dari{" "}
-            <strong className="text-gray-800">62% orang dewasa</strong>{" "}
-            mengalami gangguan tidur. Sleep Tourism hadir sebagai solusi untuk
-            membantu tubuh dan pikiran beristirahat lebih baik melalui kombinasi
-            relaksasi, meditasi, dan gaya hidup sehat.
-          </p>
-        </div>
+        <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-relaxed md:text-left text-justify">
+          Sebuah program 2 hari, 1 malam yang membantu kamu untuk{" "}
+          <span className="text-pink-600">
+            melepaskan stres berkepanjangan.
+          </span>
+        </h3>
+        <p className="text-gray-700 text-md md:text-lg mt-4 leading-relaxed text-justify md:text-left">
+          <strong>Wellness Tourism Program</strong> adalah kegiatan yang
+          ditujukan bagi kamu yang ingin menghilangkan kepenatan sejenak.
+          Difasilitasi oleh instruktur berpengalaman, program ini membantu kamu
+          beristirahat sejenak dari rutinitas sehari-hari dan mengembalikan
+          energi tubuh serta pikiran.
+        </p>
+      </div>
+
+      {/* Bagian Gambar */}
+      <div className="md:w-2/5 h-56 md:h-auto flex items-center justify-center">
+        <img
+          src={sleepTourismImage}
+          alt="Sleep Tourism Program"
+          className="w-full h-full object-cover rounded-t-xl md:rounded-l-none md:rounded-r-xl"
+        />
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import { FaBed, FaHeartbeat, FaSpa, FaUsers } from "react-icons/fa";
-import img1 from "../assets/img2.jpeg"; // Gambar utama
+import img1 from "../assets/img2.jpeg";
 
 function MainContent2() {
   const scrollToNextContent = () => {
@@ -25,43 +25,43 @@ function MainContent2() {
         meditasi, dan gaya hidup sehat.
       </p>
 
-      {/* Grid untuk MD ke atas */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-gray-100 shadow-lg p-6 md:p-12 rounded-xl">
-        {/* Gambar */}
-        <div className="w-full flex justify-center">
+      {/* Konten dengan gambar di kiri dan teks di kanan */}
+      <div className="flex flex-col md:flex-row bg-gray-100 shadow-lg rounded-xl overflow-hidden">
+        {/* Gambar di sebelah kiri */}
+        <div className="md:w-2/5 h-56 md:h-auto">
           <img
             src={img1}
             alt="Sleep Tourism Experience"
-            className="w-full max-w-sm md:max-w-md rounded-lg shadow-md"
+            className="w-full h-full object-cover rounded-t-xl md:rounded-t-none md:rounded-l-xl"
           />
         </div>
 
-        {/* Poin Highlight */}
-        <div className="space-y-6">
-          <div className="space-y-4">
+        {/* Poin Highlight di sebelah kanan */}
+        <div className="md:w-3/5 p-6 md:p-12 space-y-6 flex flex-col justify-center">
+          <div className="space-y-8">
             <div className="flex items-center space-x-4">
               <FaBed className="text-red-500 text-3xl" />
-              <p className="text-gray-800 font-semibold text-base md:text-lg">
+              <p className="text-gray-800 font-semibold text-sm md:text-lg">
                 62% orang dewasa mengalami gangguan tidur (World Sleep Society,
                 2022)
               </p>
             </div>
             <div className="flex items-center space-x-4">
               <FaHeartbeat className="text-red-500 text-3xl" />
-              <p className="text-gray-800 font-semibold text-base md:text-lg">
+              <p className="text-gray-800 font-semibold text-sm md:text-lg">
                 Tidur berkualitas meningkatkan sistem imun & mengurangi risiko
                 penyakit kardiovaskular
               </p>
             </div>
             <div className="flex items-center space-x-4">
               <FaSpa className="text-red-500 text-3xl" />
-              <p className="text-gray-800 font-semibold text-base md:text-lg">
+              <p className="text-gray-800 font-semibold text-sm md:text-lg">
                 Program termasuk yoga, sound healing, dan pola makan sehat
               </p>
             </div>
             <div className="flex items-center space-x-4">
               <FaUsers className="text-red-500 text-3xl" />
-              <p className="text-gray-800 font-semibold text-base md:text-lg">
+              <p className="text-gray-800 font-semibold text-sm md:text-lg">
                 Cocok untuk profesional, orang tua, dan pecinta wellness
               </p>
             </div>

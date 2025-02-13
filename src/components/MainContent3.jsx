@@ -137,7 +137,7 @@ function MainContent3() {
           <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white via-white/90 to-transparent pointer-events-none"></div>
         )}
       </div>
-      <div className="text-center mt-6 relative">
+      <div className="text-center mt-2 relative">
         <button
           onClick={() => setShowAll(!showAll)}
           className="bg-gradient-to-r from-red-400 to-red-500 text-white font-medium px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"

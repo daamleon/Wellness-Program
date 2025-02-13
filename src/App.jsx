@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-// import MainContent1 from "./components/MainContent1";
+import MainContent1 from "./components/MainContent1";
 import MainContent2 from "./components/MainContent2";
 import MainContent3 from "./components/MainContent3";
 import MainContent4 from "./components/MainContent4";
@@ -38,9 +38,9 @@ function App() {
       {/* Kirimkan isOpen dan setIsOpen ke NavMobile */}
       <div className="pt-12 flex-1 overflow-x-hidden">
         <Hero />
+        <MainContent1 />
         <VidPlayer videoId="72ZVFzu0WnE" />
 
-        {/* <MainContent1 /> */}
         <MainContent2 />
         <MainContent3 />
         {/* <Rundown /> */}
