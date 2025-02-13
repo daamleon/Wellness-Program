@@ -4,8 +4,8 @@ import logo from "../assets/agendakota.png";
 
 function Header({ isOpen, setIsOpen }) {
   const scrollToHome = () => {
-    const mainContent = document.getElementById("next-content");
-    if (home) {
+    const mainContent = document.getElementById("home");
+    if (mainContent) {
       mainContent.scrollIntoView({ behavior: "smooth" });
     }
   };
