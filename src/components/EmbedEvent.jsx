@@ -2,8 +2,7 @@ const EmbedEvent = ({ handleClose }) => {
   return (
     <div className="flex flex-col items-center py-10">
       <embed
-        src="https://demo.agendakota.id/embed-event/9e1e9b04-91cc-4ecd-942e-85218e130473"
-        className="rounded-xl shadow-lg"
+        src="https://agendakota.id/embed-event/9e334b60-3868-4d7c-bea7-20cbbe2d7ea7"
         style={{
           minHeight: "800px",
           width: "100%",
