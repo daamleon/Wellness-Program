@@ -3,6 +3,12 @@ import { Menu } from "lucide-react";
 import logo from "../assets/agendakota.png";
 
 function Header({ isOpen, setIsOpen }) {
+  const scrollToHome = () => {
+    const mainContent = document.getElementById("next-content");
+    if (home) {
+      mainContent.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   const scrollToPromotion = () => {
     const mainContent = document.getElementById("promotion");
     if (mainContent) {
@@ -37,8 +43,8 @@ function Header({ isOpen, setIsOpen }) {
 
       <nav className="hidden md:flex items-center space-x-6">
         <a
-          href="home"
-          className="p-2 text-red-500 rounded-lg transform hover:scale-105 transition-all duration-300 hover:text-red-500"
+          onClick={scrollToHome}
+          className="hover:cursor-pointer p-2 text-red-500 rounded-lg transform hover:scale-105 transition-all duration-300 hover:text-red-500"
         >
           Home
         </a>

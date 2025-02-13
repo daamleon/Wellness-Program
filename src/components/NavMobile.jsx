@@ -13,6 +13,12 @@ function NavMobile({ isOpen, setIsOpen }) {
       mainContent.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const scrollToHome = () => {
+    const mainContent = document.getElementById("home");
+    if (mainContent) {
+      mainContent.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <nav
       className={`fixed top-0 left-0 w-full h-full bg-white bg-opacity-95 text-white flex flex-col items-center justify-center transition-transform transform ${
@@ -26,8 +32,11 @@ function NavMobile({ isOpen, setIsOpen }) {
         &times;
       </button>
       <a
-        href="home"
-        className="p-4 text-lg w-full text-center text-red-500 transform hover:scale-105 transition-all duration-300 hover:text-red-500"
+        onClick={() => {
+          scrollToHome();
+          setIsOpen(false);
+        }}
+        className="p-4 text-lg w-full text-center text-red-500 transform hover:scale-105 transition-all duration-300 hover:text-red-500 hover:cursor-pointer"
       >
         Home
       </a>
