@@ -3,7 +3,7 @@ import { FaArrowDown } from "react-icons/fa";
 
 function Hero() {
   const scrollToMainContent = () => {
-    const mainContent = document.getElementById("main-content");
+    const mainContent = document.getElementById("main");
     if (mainContent) {
       mainContent.scrollIntoView({ behavior: "smooth" });
     }
@@ -21,10 +21,8 @@ function Hero() {
       className="relative w-full h-full md:h-[650px] bg-cover bg-center flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-12 py-10"
       style={{ backgroundImage: `url(${bannerImg})` }}
     >
-      {/* Overlay untuk meningkatkan keterbacaan teks */}
       <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
 
-      {/* Konten utama */}
       <div className="relative z-10 w-full md:w-1/2 text-left flex flex-col justify-center items-center">
         <h1 className="text-4xl md:text-6xl font-black drop-shadow-lg text-white text-center">
           SLEEP TOURISM & WELLNESS
@@ -38,7 +36,6 @@ function Hero() {
           rasakan energi baru dengan program Sleep Tourism.
         </p>
 
-        {/* Tombol CTA */}
         <div className="flex flex-col md:flex-row items-center gap-4 mt-6">
           <button
             onClick={scrollToPromotion}
@@ -55,10 +52,9 @@ function Hero() {
         </div>
       </div>
 
-      {/* Scroll Button */}
       <div
         onClick={scrollToMainContent}
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer animate-bounce"
+        className="absolute bottom-10 cursor-pointer animate-bounce"
       >
         <FaArrowDown className="text-white text-center text-3xl md:text-4xl" />
       </div>
