@@ -14,7 +14,6 @@ function Hero() {
       mainContent.scrollIntoView({ behavior: "smooth" });
     }
   };
-
   return (
     <section
       id="home"
@@ -51,7 +50,6 @@ function Hero() {
           </a>
         </div>
       </div>
-
       <div
         onClick={scrollToMainContent}
         className="absolute bottom-10 cursor-pointer animate-bounce"
@@ -61,5 +59,4 @@ function Hero() {
     </section>
   );
 }
-
 export default Hero;
