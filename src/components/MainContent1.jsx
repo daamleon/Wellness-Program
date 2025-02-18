@@ -12,7 +12,7 @@ function MainContent1() {
       <div className="w-full p-6 flex flex-col justify-center">
         <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-relaxed text-center">
           Sebuah program 2 hari, 1 malam yang membantu kamu untuk{" "}
-          <span className="text-pink-600">
+          <span className="text-pink-600 text-3xl">
             melepaskan stres berkepanjangan.
           </span>
         </h3>
