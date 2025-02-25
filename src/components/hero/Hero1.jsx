@@ -14,7 +14,6 @@ function Hero() {
 
   return (
     <section
-      id="home"
       className="relative w-full h-full md:h-[650px] bg-cover bg-center flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-12 py-10"
       style={{ backgroundImage: `url(${bannerImg})` }}
     >
@@ -38,6 +37,12 @@ function Hero() {
           >
             Daftar Sekarang
           </button>
+          <a
+            href="https://wa.me/081235189247"
+            className="border-2 border-red-500 text-red-500 px-6 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-red-500 hover:text-white transition"
+          >
+            Hubungi Kami
+          </a>
         </div>
       </div>
       <div

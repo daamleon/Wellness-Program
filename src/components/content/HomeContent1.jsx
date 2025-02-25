@@ -28,12 +28,14 @@ const programs = [
     link: "/program/coming-soon",
     image: new URL("@/assets/relax.jpg", import.meta.url).href,
   },
- 
 ];
 
 const HomeContent = () => {
   return (
-    <div className="relative z-10 w-full mx-auto text-center flex flex-col justify-center items-center text-gray-900 py-12 px-6">
+    <div
+      id="main"
+      className="relative z-10 w-full mx-auto text-center flex flex-col justify-center items-center text-gray-900 py-12 px-6"
+    >
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
         Pilih Program Wellness Anda
       </h2>
