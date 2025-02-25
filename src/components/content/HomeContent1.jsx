@@ -11,12 +11,12 @@ const programs = [
   {
     title: "Wellness Retreat",
     icon: <FaSpa className="text-red-500 text-3xl" />,
-    link: "/program/wellness-retreat",
+    link: "/program/coming-soon",
   },
   {
     title: "Mindfulness Program",
     icon: <FaHeartbeat className="text-red-500 text-3xl" />,
-    link: "/program/mindfulness",
+    link: "/program/coming-soon",
   },
 ];
 

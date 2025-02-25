@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import bannerImg from "@/assets/banner.jpeg";
+import bannerImg from "@/assets/bannernew.jpg";
 import { FaArrowDown, FaSpa, FaBed, FaHeartbeat } from "react-icons/fa";
 
 function Hero() {
@@ -25,8 +25,6 @@ function Hero() {
         <h2 className="text-xl md:text-2xl mt-2 font-light drop-shadow-lg">
           Temukan keseimbangan tubuh & pikiran dengan program wellness terbaik.
         </h2>
-
-       
 
         {/* Tombol Aksi */}
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-8">
