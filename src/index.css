@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -28,9 +29,6 @@ a:hover {
 
 html, body {
   width: 100%;
-  min-width: 100vw;
-  max-width: 100%;
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
 }

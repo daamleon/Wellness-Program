@@ -11,7 +11,7 @@ function Hero() {
   return (
     <section
       id="home"
-      className="relative w-full h-screen md:h-[700px] bg-cover bg-center flex items-center px-6 md:px-12 py-10"
+      className="relative w-full h-screen bg-cover bg-center flex items-center justify-center px-6 md:px-12 py-10"
       style={{ backgroundImage: `url(${bannerImg})` }}
     >
       {/* Overlay Gelap */}

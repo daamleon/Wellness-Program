@@ -6,12 +6,10 @@ import HomeContent from "@/components/content/HomeContent1";
 
 function HomePage() {
   return (
-    <div className="w-full min-h-screen flex flex-col bg-white overflow-hidden">
+    <div className="w-full h-full bg-white">
       <Header />
-      <div className="flex-grow w-full">
         <Hero />
         <HomeContent />
-      </div>
       <Footer />
     </div>
   );
