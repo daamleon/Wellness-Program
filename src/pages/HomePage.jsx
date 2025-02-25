@@ -1,18 +1,16 @@
 import React from "react";
-import Header from "../components/common/Header";
-import Footer from "../components/common/Footer";
-import Hero from "../components/hero/Hero";
-import VideoPlayer from "../components/common/VideoPlayer";
+import Header from "@/components/common/Header";
+import Footer from "@/components/common/Footer";
+import Hero from "@/components/hero/Hero";
+import HomeContent from "@/components/content/HomeContent1";
 
 function HomePage() {
-  console.log("HomePage loaded!"); // Debugging
-
   return (
-    <div className="w-screen h-screen flex flex-col bg-white">
+    <div className="w-full min-h-screen flex flex-col bg-white overflow-x-hidden">
       <Header />
-      <div className="pt-12 flex-1 overflow-x-hidden">
+      <div className="flex-grow overflow-hidden">
         <Hero />
-        <VideoPlayer videoId="72ZVFzu0WnE" />
+        <HomeContent />
       </div>
       <Footer />
     </div>
