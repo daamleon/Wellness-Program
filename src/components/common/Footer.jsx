@@ -12,9 +12,7 @@ function Footer() {
       {/* Bagian Kiri */}
       <div className="flex flex-col items-center md:items-start space-y-4 text-center md:text-left md:w-[60%]">
         <div>
-          <p className="text-white text-xl font-bold">
-            Sleep Tourism & Wellness Program
-          </p>
+          <p className="text-white text-xl font-bold">Wellness Program</p>
           <p className="text-sm">
             powered by{" "}
             <a
@@ -27,11 +25,7 @@ function Footer() {
             </a>
           </p>
         </div>
-        <p className="text-sm md:text-base leading-relaxed">
-          Sleep tourism atau pariwisata tidur adalah konsep perjalanan yang
-          berfokus pada pengalaman relaksasi, perbaikan kualitas tidur, dan
-          revitalisasi tubuh.
-        </p>
+        <p className="text-sm md:text-base leading-relaxed">example text</p>
       </div>
 
       {/* Bagian Kanan */}
@@ -58,7 +52,7 @@ function Footer() {
         {/* Copyright */}
         <div>
           <p className="text-sm mt-4 md:mt-0 text-center md:text-left">
-            &copy; 2025 Sleep Tourism & Wellness Program by Agendakota.id. All
+            &copy; 2025 Wellness Program by Agendakota.id. All
             rights reserved.
           </p>
         </div>

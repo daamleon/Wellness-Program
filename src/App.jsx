@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import ProgramPage from "./pages/ProgramPage";
+import ProgramPage from "./pages/SleepTourism";
 import NotFound from "./pages/NotFound";
 import "./index.css";
 import "@fontsource/inter";

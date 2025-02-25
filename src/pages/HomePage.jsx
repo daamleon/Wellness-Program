@@ -6,9 +6,9 @@ import HomeContent from "@/components/content/HomeContent1";
 
 function HomePage() {
   return (
-    <div className="w-full min-h-screen flex flex-col bg-white overflow-x-hidden">
+    <div className="w-screen min-h-screen flex flex-col bg-white">
       <Header />
-      <div className="flex-grow overflow-hidden">
+      <div className="flex-grow w-full">
         <Hero />
         <HomeContent />
       </div>
