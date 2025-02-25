@@ -4,26 +4,22 @@ import { FaBriefcase, FaHome, FaSpa, FaPlane } from "react-icons/fa";
 const audienceData = [
   {
     title: "Profesional dengan Rutinitas Tinggi",
-    description:
-      "Pekerja kantoran dan eksekutif yang sering terpapar stres pekerjaan dan membutuhkan keseimbangan antara pekerjaan dan kesehatan.",
+    description: "Pekerja kantoran yang sering stres.",
     icon: <FaBriefcase className="text-red-500 text-4xl" />,
   },
   {
-    title: "Ibu Rumah Tangga dan Orang Tua",
-    description:
-      "Mereka yang sibuk mengurus keluarga sering kali mengalami gangguan tidur akibat tanggung jawab harian yang tinggi.",
+    title: "Ibu Rumah Tangga",
+    description: "Orang tua yang sibuk mengurus keluarga.",
     icon: <FaHome className="text-red-500 text-4xl" />,
   },
   {
-    title: "Pecinta Wellness & Self-Care",
-    description:
-      "Masyarakat yang tertarik dengan gaya hidup sehat dan ingin memperdalam pengalaman wellness mereka.",
+    title: "Pecinta Wellness",
+    description: "Orang yang tertarik dengan gaya hidup sehat.",
     icon: <FaSpa className="text-red-500 text-4xl" />,
   },
   {
     title: "Wisatawan Domestik",
-    description:
-      "Pelancong yang ingin menikmati pengalaman staycation unik di hotel bintang 4 atau 5 dengan layanan kesehatan dan relaksasi.",
+    description: "Pelancong yang ingin menikmati staycation.",
     icon: <FaPlane className="text-red-500 text-4xl" />,
   },
 ];

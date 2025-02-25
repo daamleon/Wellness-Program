@@ -1,15 +1,8 @@
 import React from "react";
 import { FaBed, FaHeartbeat, FaSpa, FaUsers } from "react-icons/fa";
-import img1 from "../assets/img2.jpeg";
+import img1 from "@/assets/img2.jpeg";
 
 function MainContent2() {
-  const scrollToNextContent = () => {
-    const mainContent = document.getElementById("next-content");
-    if (mainContent) {
-      mainContent.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <section id="main-content" className="mx-4 md:mx-auto max-w-6xl my-2 mb-10">
       <h3 className="text-2xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
@@ -25,9 +18,7 @@ function MainContent2() {
         meditasi, dan gaya hidup sehat.
       </p>
 
-      {/* Konten dengan gambar di kiri dan teks di kanan */}
       <div className="flex flex-col md:flex-row bg-gray-100 shadow-lg rounded-xl overflow-hidden">
-        {/* Gambar di sebelah kiri */}
         <div className="md:w-2/5 h-56 md:h-auto">
           <img
             src={img1}
@@ -36,7 +27,6 @@ function MainContent2() {
           />
         </div>
 
-        {/* Poin Highlight di sebelah kanan */}
         <div className="md:w-3/5 p-6 md:p-12 space-y-6 flex flex-col justify-center">
           <div className="space-y-8">
             <div className="flex items-center space-x-4">
@@ -67,15 +57,6 @@ function MainContent2() {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="flex justify-center mt-6">
-        <button
-          onClick={scrollToNextContent}
-          className="bg-gradient-to-r from-red-400 to-red-500 text-white font-medium px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
-        >
-          Explore Sleep Tourism
-        </button>
       </div>
     </section>
   );

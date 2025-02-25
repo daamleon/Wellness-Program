@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
-import bgImage from "../assets/Location1.jpg";
-import EmbedEvent from "../components/EmbedEvent";
+import bgImage from "@/assets/Location1.jpg";
+import EmbedEvent from "@/components/event/EmbedEvent";
 
 function PackageSection() {
   const [showEmbed, setShowEmbed] = useState(false);
@@ -34,10 +34,7 @@ function PackageSection() {
   ];
 
   useEffect(() => {
-    const handleResize = () => {
-      setShowAll(window.innerWidth >= 768);
-    };
-
+    const handleResize = () => setShowAll(window.innerWidth >= 768);
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -49,12 +46,8 @@ function PackageSection() {
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
-
-      <div className="z-10 w-full h-full max-w-5xl text-center text-white bg-black bg-opacity-30 py-16 md:py-16 p-6 lg:p-20 md:rounded-2xl shadow-2xl backdrop-blur-md">
-        <h2
-          id="promotion"
-          className="text-xl md:text-4xl font-extrabold leading-tight"
-        >
+      <div className="z-10 w-full max-w-5xl text-center text-white py-16 p-6 lg:p-20 md:rounded-2xl shadow-2xl backdrop-blur-md bg-black bg-opacity-30">
+        <h2 className="text-xl md:text-4xl font-extrabold leading-tight">
           Sleep & Wellness Tourism
         </h2>
         <p className="text-md text-gray-300 mt-2 font-light">
@@ -73,7 +66,7 @@ function PackageSection() {
           </p>
         </div>
 
-        <p className="mt-4 border-lg text-red-500 px-6 py-2 rounded-full text-md font-bold inline-block animate-pulse">
+        <p className="mt-4 text-red-500 px-6 py-2 rounded-full text-md font-bold inline-block animate-pulse">
           🚀 Kuota Terbatas, hanya untuk 10 pendaftar pertama!
         </p>
 

@@ -1,18 +1,19 @@
 import React from "react";
-import LocationItem from "./LocationItem";
-import Aset1 from "../assets/Location1.jpg";
-import Aset2 from "../assets/Location2.jpg";
-import Aset3 from "../assets/Location3.jpg";
-import Aset4 from "../assets/Location4.jpg";
+import LocationItem from "@/components/ui/LocationItem";
+import Aset1 from "@/assets/Location1.jpg";
+import Aset2 from "@/assets/Location2.jpg";
+import Aset3 from "@/assets/Location3.jpg";
+import Aset4 from "@/assets/Location4.jpg";
+
 const locations = [
   {
     name: "Mercure Surabaya Grand Mirama",
-    address: "Jl. Raya Darmo No.68-78, Surabaya, Jawa Timur",
+    address: "Jl. Raya Darmo No.68-78, Surabaya",
     images: [Aset1, Aset4, Aset2],
   },
   {
     name: "Platinum Hotel Tunjungan",
-    address: "Jl. Tunjungan No.1, Surabaya, Jawa Timur",
+    address: "Jl. Tunjungan No.1, Surabaya",
     images: [Aset4, Aset3, Aset1],
   },
 ];
