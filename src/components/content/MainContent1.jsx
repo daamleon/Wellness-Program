@@ -1,7 +1,4 @@
 import React from "react";
-import sleepTourismImage from "@/assets/relax.jpg";
-import indonesiaLogo from "@/assets/agendakota.png";
-import dailyHotelsLogo from "@/assets/dailyhotels.png";
 
 function MainContent1() {
   return (

@@ -11,9 +11,9 @@ const programs = [
     image: new URL("@/assets/img4.jpeg", import.meta.url).href,
   },
   {
-    title: "Wellness Retreat",
+    title: "Wellness Camp",
     icon: <FaSpa className="text-red-500 text-3xl" />,
-    link: "/program/coming-soon",
+    link: "/program/wellness-camp",
     image: new URL("@/assets/relax.jpg", import.meta.url).href,
   },
   {
