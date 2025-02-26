@@ -2,30 +2,29 @@ import React from "react";
 import CardProgram from "@/components/ui/CardProgram";
 import { FaSpa, FaBed, FaHeartbeat } from "react-icons/fa";
 
-// Import gambar dengan new URL
 const programs = [
   {
     title: "Sleep Tourism",
     icon: <FaBed className="text-red-500 text-3xl" />,
-    link: "/program/sleep-tourism",
+    link: "/wellness-program/program/sleep-tourism",
     image: new URL("@/assets/img4.jpeg", import.meta.url).href,
   },
   {
     title: "Wellness Camp",
     icon: <FaSpa className="text-red-500 text-3xl" />,
-    link: "/program/wellness-camp",
+    link: "/wellness-program/program/wellness-camp",
     image: new URL("@/assets/relax.jpg", import.meta.url).href,
   },
   {
     title: "Mindfulness Program",
     icon: <FaHeartbeat className="text-red-500 text-3xl" />,
-    link: "/program/coming-soon",
+    link: "/wellness-program/program/coming-soon",
     image: new URL("@/assets/stretching.jpg", import.meta.url).href,
   },
   {
     title: "Wellness Retreat",
     icon: <FaSpa className="text-red-500 text-3xl" />,
-    link: "/program/coming-soon",
+    link: "/wellness-program/program/coming-soon",
     image: new URL("@/assets/relax.jpg", import.meta.url).href,
   },
 ];

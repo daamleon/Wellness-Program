@@ -5,7 +5,7 @@ function NotFound() {
   return (
     <div className="flex flex-col items-center justify-center h-screen w-screen">
       <h1 className="text-3xl font-bold">404 - Page Not Found</h1>
-      <Link to="/" className="mt-4 text-blue-500">
+      <Link to="/Wellness-Program" className="mt-4 text-blue-500">
         Kembali ke Beranda
       </Link>
     </div>

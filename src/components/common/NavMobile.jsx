@@ -43,7 +43,7 @@ function NavMobile({ isOpen, setIsOpen }) {
         Home
       </a> */}
       <Link
-        to="/"
+        to="/wellness-program"
         className="hover:cursor-pointer p-2 text-red-500 rounded-lg transform hover:scale-105 transition-all duration-300 hover:text-red-500"
       >
         Home

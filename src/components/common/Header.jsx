@@ -8,7 +8,7 @@ function Header({ isOpen, setIsOpen }) {
   return (
     <header className="h-[65px] bg-white p-4 flex items-center justify-between fixed top-0 w-full z-50 rounded-b-xl shadow-md">
       <div className="flex items-center">
-        <Link to="/">
+        <Link to="/wellness-program">
           <img
             src={logo}
             alt="Agenda Kota Logo"
@@ -26,7 +26,7 @@ function Header({ isOpen, setIsOpen }) {
 
       <nav className="hidden md:flex items-center space-x-6">
         <Link
-          to="/"
+          to="/wellness-program"
           className="hover:cursor-pointer p-2 text-red-500 rounded-lg transform hover:scale-105 transition-all duration-300 hover:text-red-500"
         >
           Home

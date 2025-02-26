@@ -5,7 +5,6 @@ import MainContent1 from "@/components/reusable/MainContent1";
 import MainContent2 from "@/components/reusable/MainContent2";
 import MainContent3 from "@/components/reusable/MainContent3";
 import MainContent4 from "@/components/reusable/MainContent4";
-import EventLocation from "@/components/event/EventLocation";
 import Footer from "@/components/common/Footer";
 import NavMobile from "@/components/common/NavMobile";
 import Promo from "@/components/event/Promotion";
@@ -26,7 +25,13 @@ import checkup from "@/assets/checkup.jpg";
 import mentalConsultation from "@/assets/consultation.jpg";
 import gift from "@/assets/gift.webp";
 import img1 from "@/assets/img2.jpeg";
-
+import Location from "@/components/reusable/Location";
+import Aset1 from "@/assets/Location1.jpg";
+import Aset2 from "@/assets/Location2.jpg";
+import Aset3 from "@/assets/Location3.jpg";
+import Aset4 from "@/assets/Location4.jpg";
+import Promotion from "@/components/reusable/Promotion";
+import bgImage from "@/assets/Location1.jpg";
 
 function ProgramPage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -104,7 +109,6 @@ function ProgramPage() {
    },
  ];
 
-
   const audienceData = [
     {
       title: "Profesional",
@@ -128,7 +132,33 @@ function ProgramPage() {
     },
   ];
 
-  
+  const locations = [
+    {
+      name: "Mercure Surabaya Grand Mirama",
+      address: "Jl. Raya Darmo No.68-78, Surabaya",
+      images: [Aset1, Aset4, Aset2],
+    },
+    {
+      name: "Platinum Hotel Tunjungan",
+      address: "Jl. Tunjungan No.1, Surabaya",
+      images: [Aset4, Aset3, Aset1],
+    },
+  ];
+
+  const benefits = [
+    "Healthy Dinner",
+    "Medical Check-up",
+    "Aqua Yoga",
+    "Wellness Workshop",
+    "Sound Healing & Relaxation",
+    "Mental Health Consultation",
+    "Morning Yoga & Stretching",
+    "Mindfulness Walk",
+    "Accomodation 2D1N",
+    "Healthy Breakfast",
+    "Mindfulness Eating",
+    "Aromatherapy Gift",
+  ];
 
 
   return (
@@ -175,8 +205,15 @@ function ProgramPage() {
         />
         <MainContent3 title="Apa saja agendanya?" agendaData={agendaData} />
         <MainContent4 title="Cocok untuk siapa?" audienceData={audienceData} />
-        <EventLocation />
-        <Promo />
+        <Location title="Lokasi Kegiatan" locations={locations} />
+        <Promotion
+          title="Sleep & Wellness Tourism"
+          subtitle="Medical Journey & Wellness Package"
+          originalPrice="IDR 3.200.000"
+          discountedPrice="IDR 2.499.000"
+          benefits={benefits}
+          backgroundImage={bgImage}
+        />
         <Footer />
       </div>
     </div>
