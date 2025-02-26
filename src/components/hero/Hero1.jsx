@@ -26,9 +26,6 @@ function Hero() {
         <h2 className="text-xl md:text-3xl mt-2 font-light text-white text-center">
           Recharge Your Body, Revive Your Mind
         </h2>
-        <p className="text-center text-white mt-4">
-          Nikmati pengalaman relaksasi terbaik...
-        </p>
 
         <div className="flex flex-col md:flex-row items-center gap-4 mt-6">
           <button
