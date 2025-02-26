@@ -8,7 +8,7 @@ function NotFound() {
         {" "}
         Program ini masih dalam pengembangan. Silakan cek kembali nanti.
       </h1>
-      <Link to="/" className="mt-4 text-blue-500">
+      <Link to="/wellness-program" className="mt-4 text-blue-500">
         Kembali ke Beranda
       </Link>
     </div>
