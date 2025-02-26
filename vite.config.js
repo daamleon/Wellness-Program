@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/wellness-program/",
+  base: "/wellness-program",
   plugins: [react()],
   resolve: {
     alias: {
