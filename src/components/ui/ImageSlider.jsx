@@ -7,7 +7,7 @@ function ImageSlider({ images }) {
   useEffect(() => {
     const interval = setInterval(() => {
       handleNextSlide();
-    }, 3000); // Ganti gambar setiap 3 detik
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [images.length]);

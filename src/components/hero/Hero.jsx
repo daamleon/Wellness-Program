@@ -14,10 +14,9 @@ function Hero() {
       className="relative w-full h-screen bg-cover bg-center flex items-center justify-center px-6 md:px-12 py-10"
       style={{ backgroundImage: `url(${bannerImg})` }}
     >
-      {/* Overlay Gelap */}
+     
       <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
-
-      {/* Konten Hero */}
+      
       <div className="relative z-10 w-full max-w-4xl mx-auto text-center text-white">
         <h1 className="text-4xl md:text-6xl font-black drop-shadow-lg">
           WELLNESS & RELAXATION JOURNEY

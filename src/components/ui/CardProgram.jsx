@@ -8,16 +8,11 @@ const CardProgram = ({ title, icon, link, image }) => {
       to={link}
       className="relative w-full max-w-xs rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 group"
     >
-      {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
         style={{ backgroundImage: `url(${image})` }}
       />
-
-      {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent transition-opacity duration-500 group-hover:opacity-0" />
-
-      {/* Content Layer */}
       <div className="relative flex flex-col items-center justify-end p-6 h-64 text-center text-black hover:text-white hover:shadow-lg">
         {icon && <div className="mb-2">{icon}</div>}
         <span className="text-lg font-semibold">{title}</span>
